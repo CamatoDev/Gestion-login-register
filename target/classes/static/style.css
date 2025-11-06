@@ -1,0 +1,127 @@
+/* Styles généraux pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Styles pour le conteneur global des formulaires et des onglets */
+.forms-container {
+    width: 350px;
+    max-width: 90%;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Assure que tout contenu sortant du conteneur est caché */
+}
+
+/* Styles pour la barre d'onglets */
+.tabs {
+    display: flex;
+    justify-content: space-around; /* Répartit l'espace entre les boutons */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Styles pour les boutons d'onglets */
+.tab-button {
+    flex: 1; /* Permet aux boutons de prendre une largeur égale */
+    padding: 15px;
+    background-color: #f7f7f7;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-button:hover {
+    background-color: #eee;
+}
+
+.tab-button.active {
+    background-color: #ffffff;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    font-weight: bold;
+}
+
+/* Conteneur pour le contenu des formulaires */
+.form-content {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Styles pour cacher les formulaires inactifs */
+.login-form, .register-form {
+    display: none;
+}
+
+/* Style pour afficher le formulaire actif */
+.form-content .active {
+    display: block;
+}
+
+/* Styles pour les titres */
+.login-form h2, .register-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styles pour les champs de saisie */
+.login-form input, .register-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* Effet au focus sur les champs de saisie */
+.login-form input:focus, .register-form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Styles pour le bouton */
+.login-form button, .register-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Effet au survol du bouton */
+.login-form button:hover, .register-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles pour les liens */
+.login-form p, .register-form p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-form a, .register-form a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Effet au survol des liens */
+.login-form a:hover, .register-form a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
