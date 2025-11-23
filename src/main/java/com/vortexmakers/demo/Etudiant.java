@@ -75,7 +75,6 @@ public class Etudiant {
 
         PreparedStatement addstmt 
             = JDBC.getConnection().prepareStatement(command);
-        //System.out.println("com.vortexmakers.test.Etudiant.save()");
 
         addstmt.setObject(1,nom);
         addstmt.setObject(2, prenom);

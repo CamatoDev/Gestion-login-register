@@ -14,7 +14,7 @@ import java.sql.SQLException;
 
 @RestController
 @RequestMapping("/api/etudiant")
-@CrossOrigin(origins = "http://localhost:8080") // Autoriser les requêtes depuis votre frontend
+@CrossOrigin(origins = "http://localhost:8080") // Autoriser les requêtes depuis notre frontend
 public class EtudiantController {
 
     private GestionnaireEtudiant gestionnaire = new GestionnaireEtudiant();
@@ -59,9 +59,17 @@ public class EtudiantController {
         private String password;
 
         // Getters et Setters
-        public String getLogin() { return login; }
-        public void setLogin(String login) { this.login = login; }
-        public String getPassword() { return password; }
-        public void setPassword(String password) { this.password = password; }
+        public String getLogin() { 
+            return login;  
+        }
+        public void setLogin(String login) {
+            this.login = login; 
+        }
+        public String getPassword() { 
+            return password; 
+        }
+        public void setPassword(String password) { 
+            this.password = password; 
+        }
     }
 }
